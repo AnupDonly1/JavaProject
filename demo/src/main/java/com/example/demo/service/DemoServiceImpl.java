@@ -21,7 +21,7 @@ public class DemoServiceImpl implements DemoService {
 	
 	@Override
 	public Demo addDemo(Demo demo) {
-		
+		logger.info("demo adddemo");
 		if(demo != null) {
 			DemoDB demoDB = new DemoDB();
 			demoDB.setId(demo.getId());
